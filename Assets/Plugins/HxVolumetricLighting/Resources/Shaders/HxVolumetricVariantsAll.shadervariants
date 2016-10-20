@@ -1,0 +1,707 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!200 &20000000
+ShaderVariantCollection:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: HxVolumetricVariantsAll
+  m_Shaders:
+    data:
+      first: {fileID: 4800000, guid: 11da282a21cd2f845868977445744205, type: 3}
+      second:
+        variants:
+        - keywords: SHADOWS_DEPTH
+          passType: 8
+        - keywords: SHADOWS_CUBE
+          passType: 8
+    data:
+      first: {fileID: 4800000, guid: 23c7d346d64ea5b4e9917e825c3b77aa, type: 3}
+      second:
+        variants:
+        - keywords: 
+          passType: 0
+    data:
+      first: {fileID: 4800000, guid: 2c89df182d4c77146910c220934ad3d9, type: 3}
+      second:
+        variants:
+        - keywords: 
+          passType: 0
+    data:
+      first: {fileID: 4800000, guid: 7c8ef85e76c05f341a66461ff8df1792, type: 3}
+      second:
+        variants:
+        - keywords: 
+          passType: 0
+        - keywords: FULL_ON
+          passType: 0
+        - keywords: HEIGHTFOG_ON
+          passType: 0
+        - keywords: FULL_ON HEIGHTFOG_ON
+          passType: 0
+        - keywords: NOISE_ON
+          passType: 0
+        - keywords: FULL_ON NOISE_ON
+          passType: 0
+        - keywords: HEIGHTFOG_ON NOISE_ON
+          passType: 0
+        - keywords: FULL_ON HEIGHTFOG_ON NOISE_ON
+          passType: 0
+        - keywords: SHADOWS_ON
+          passType: 0
+        - keywords: FULL_ON SHADOWS_ON
+          passType: 0
+        - keywords: HEIGHTFOG_ON SHADOWS_ON
+          passType: 0
+        - keywords: FULL_ON HEIGHTFOG_ON SHADOWS_ON
+          passType: 0
+        - keywords: NOISE_ON SHADOWS_ON
+          passType: 0
+        - keywords: FULL_ON NOISE_ON SHADOWS_ON
+          passType: 0
+        - keywords: HEIGHTFOG_ON NOISE_ON SHADOWS_ON
+          passType: 0
+        - keywords: FULL_ON HEIGHTFOG_ON NOISE_ON SHADOWS_ON
+          passType: 0
+        - keywords: VTRANSPARENCY_ON
+          passType: 0
+        - keywords: FULL_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: HEIGHTFOG_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: FULL_ON HEIGHTFOG_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: NOISE_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: FULL_ON NOISE_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: HEIGHTFOG_ON NOISE_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: FULL_ON HEIGHTFOG_ON NOISE_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: FULL_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: HEIGHTFOG_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: FULL_ON HEIGHTFOG_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: NOISE_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: FULL_ON NOISE_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: HEIGHTFOG_ON NOISE_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: FULL_ON HEIGHTFOG_ON NOISE_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON FULL_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON HEIGHTFOG_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON FULL_ON HEIGHTFOG_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON NOISE_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON FULL_ON NOISE_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON HEIGHTFOG_ON NOISE_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON FULL_ON HEIGHTFOG_ON NOISE_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON SHADOWS_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON FULL_ON SHADOWS_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON HEIGHTFOG_ON SHADOWS_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON FULL_ON HEIGHTFOG_ON SHADOWS_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON NOISE_ON SHADOWS_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON FULL_ON NOISE_ON SHADOWS_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON HEIGHTFOG_ON NOISE_ON SHADOWS_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON FULL_ON HEIGHTFOG_ON NOISE_ON SHADOWS_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON FULL_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON HEIGHTFOG_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON FULL_ON HEIGHTFOG_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON NOISE_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON FULL_ON NOISE_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON HEIGHTFOG_ON NOISE_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON FULL_ON HEIGHTFOG_ON NOISE_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON FULL_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON HEIGHTFOG_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON FULL_ON HEIGHTFOG_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON NOISE_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON FULL_ON NOISE_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON HEIGHTFOG_ON NOISE_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON FULL_ON HEIGHTFOG_ON NOISE_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+    data:
+      first: {fileID: 4800000, guid: 808dd316e5b00b347ac51557bbba5648, type: 3}
+      second:
+        variants:
+        - keywords: 
+          passType: 0
+    data:
+      first: {fileID: 4800000, guid: 812d9820a33c3bd44952d0be820a77f8, type: 3}
+      second:
+        variants:
+        - keywords: SOFTPARTICLES_ON
+          passType: 0
+        - keywords: SOFTPARTICLES_OFF
+          passType: 0
+    data:
+      first: {fileID: 4800000, guid: c1d9a54d81528704491362fc61968e7e, type: 3}
+      second:
+        variants:
+        - keywords: 
+          passType: 0
+        - keywords: FULL_ON
+          passType: 0
+        - keywords: COOKIE_ON
+          passType: 0
+        - keywords: COOKIE_ON FULL_ON
+          passType: 0
+        - keywords: HEIGHTFOG_ON
+          passType: 0
+        - keywords: FULL_ON HEIGHTFOG_ON
+          passType: 0
+        - keywords: COOKIE_ON HEIGHTFOG_ON
+          passType: 0
+        - keywords: COOKIE_ON FULL_ON HEIGHTFOG_ON
+          passType: 0
+        - keywords: NOISE_ON
+          passType: 0
+        - keywords: FULL_ON NOISE_ON
+          passType: 0
+        - keywords: COOKIE_ON NOISE_ON
+          passType: 0
+        - keywords: COOKIE_ON FULL_ON NOISE_ON
+          passType: 0
+        - keywords: HEIGHTFOG_ON NOISE_ON
+          passType: 0
+        - keywords: FULL_ON HEIGHTFOG_ON NOISE_ON
+          passType: 0
+        - keywords: COOKIE_ON HEIGHTFOG_ON NOISE_ON
+          passType: 0
+        - keywords: COOKIE_ON FULL_ON HEIGHTFOG_ON NOISE_ON
+          passType: 0
+        - keywords: SHADOWS_ON
+          passType: 0
+        - keywords: FULL_ON SHADOWS_ON
+          passType: 0
+        - keywords: COOKIE_ON SHADOWS_ON
+          passType: 0
+        - keywords: COOKIE_ON FULL_ON SHADOWS_ON
+          passType: 0
+        - keywords: HEIGHTFOG_ON SHADOWS_ON
+          passType: 0
+        - keywords: FULL_ON HEIGHTFOG_ON SHADOWS_ON
+          passType: 0
+        - keywords: COOKIE_ON HEIGHTFOG_ON SHADOWS_ON
+          passType: 0
+        - keywords: COOKIE_ON FULL_ON HEIGHTFOG_ON SHADOWS_ON
+          passType: 0
+        - keywords: NOISE_ON SHADOWS_ON
+          passType: 0
+        - keywords: FULL_ON NOISE_ON SHADOWS_ON
+          passType: 0
+        - keywords: COOKIE_ON NOISE_ON SHADOWS_ON
+          passType: 0
+        - keywords: COOKIE_ON FULL_ON NOISE_ON SHADOWS_ON
+          passType: 0
+        - keywords: HEIGHTFOG_ON NOISE_ON SHADOWS_ON
+          passType: 0
+        - keywords: FULL_ON HEIGHTFOG_ON NOISE_ON SHADOWS_ON
+          passType: 0
+        - keywords: COOKIE_ON HEIGHTFOG_ON NOISE_ON SHADOWS_ON
+          passType: 0
+        - keywords: COOKIE_ON FULL_ON HEIGHTFOG_ON NOISE_ON SHADOWS_ON
+          passType: 0
+        - keywords: VTRANSPARENCY_ON
+          passType: 0
+        - keywords: FULL_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON FULL_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: HEIGHTFOG_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: FULL_ON HEIGHTFOG_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON HEIGHTFOG_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON FULL_ON HEIGHTFOG_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: NOISE_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: FULL_ON NOISE_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON NOISE_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON FULL_ON NOISE_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: HEIGHTFOG_ON NOISE_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: FULL_ON HEIGHTFOG_ON NOISE_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON HEIGHTFOG_ON NOISE_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON FULL_ON HEIGHTFOG_ON NOISE_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: FULL_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON FULL_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: HEIGHTFOG_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: FULL_ON HEIGHTFOG_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON HEIGHTFOG_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON FULL_ON HEIGHTFOG_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: NOISE_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: FULL_ON NOISE_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON NOISE_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON FULL_ON NOISE_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: HEIGHTFOG_ON NOISE_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: FULL_ON HEIGHTFOG_ON NOISE_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON HEIGHTFOG_ON NOISE_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON FULL_ON HEIGHTFOG_ON NOISE_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON FULL_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON FULL_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON HEIGHTFOG_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON FULL_ON HEIGHTFOG_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON HEIGHTFOG_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON FULL_ON HEIGHTFOG_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON NOISE_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON FULL_ON NOISE_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON NOISE_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON FULL_ON NOISE_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON HEIGHTFOG_ON NOISE_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON FULL_ON HEIGHTFOG_ON NOISE_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON HEIGHTFOG_ON NOISE_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON FULL_ON HEIGHTFOG_ON NOISE_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON SHADOWS_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON FULL_ON SHADOWS_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON SHADOWS_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON FULL_ON SHADOWS_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON HEIGHTFOG_ON SHADOWS_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON FULL_ON HEIGHTFOG_ON SHADOWS_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON HEIGHTFOG_ON SHADOWS_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON FULL_ON HEIGHTFOG_ON SHADOWS_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON NOISE_ON SHADOWS_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON FULL_ON NOISE_ON SHADOWS_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON NOISE_ON SHADOWS_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON FULL_ON NOISE_ON SHADOWS_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON HEIGHTFOG_ON NOISE_ON SHADOWS_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON FULL_ON HEIGHTFOG_ON NOISE_ON SHADOWS_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON HEIGHTFOG_ON NOISE_ON SHADOWS_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON FULL_ON HEIGHTFOG_ON NOISE_ON SHADOWS_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON FULL_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON FULL_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON HEIGHTFOG_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON FULL_ON HEIGHTFOG_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON HEIGHTFOG_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON FULL_ON HEIGHTFOG_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON NOISE_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON FULL_ON NOISE_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON NOISE_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON FULL_ON NOISE_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON HEIGHTFOG_ON NOISE_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON FULL_ON HEIGHTFOG_ON NOISE_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON HEIGHTFOG_ON NOISE_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON FULL_ON HEIGHTFOG_ON NOISE_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON FULL_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON FULL_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON HEIGHTFOG_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON FULL_ON HEIGHTFOG_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON HEIGHTFOG_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON FULL_ON HEIGHTFOG_ON SHADOWS_ON
+            VTRANSPARENCY_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON NOISE_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON FULL_ON NOISE_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON NOISE_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON FULL_ON NOISE_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON HEIGHTFOG_ON NOISE_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON FULL_ON HEIGHTFOG_ON NOISE_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON HEIGHTFOG_ON NOISE_ON SHADOWS_ON
+            VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON FULL_ON HEIGHTFOG_ON NOISE_ON SHADOWS_ON
+            VTRANSPARENCY_ON
+          passType: 0
+    data:
+      first: {fileID: 4800000, guid: c259a0883e4b075488e7f6f676f9cb9b, type: 3}
+      second:
+        variants:
+        - keywords: 
+          passType: 0
+    data:
+      first: {fileID: 4800000, guid: e018c43c94e977a4391a157071caa9d8, type: 3}
+      second:
+        variants:
+        - keywords: 
+          passType: 0
+        - keywords: FULL_ON
+          passType: 0
+        - keywords: COOKIE_ON
+          passType: 0
+        - keywords: COOKIE_ON FULL_ON
+          passType: 0
+        - keywords: HEIGHTFOG_ON
+          passType: 0
+        - keywords: FULL_ON HEIGHTFOG_ON
+          passType: 0
+        - keywords: COOKIE_ON HEIGHTFOG_ON
+          passType: 0
+        - keywords: COOKIE_ON FULL_ON HEIGHTFOG_ON
+          passType: 0
+        - keywords: NOISE_ON
+          passType: 0
+        - keywords: FULL_ON NOISE_ON
+          passType: 0
+        - keywords: COOKIE_ON NOISE_ON
+          passType: 0
+        - keywords: COOKIE_ON FULL_ON NOISE_ON
+          passType: 0
+        - keywords: HEIGHTFOG_ON NOISE_ON
+          passType: 0
+        - keywords: FULL_ON HEIGHTFOG_ON NOISE_ON
+          passType: 0
+        - keywords: COOKIE_ON HEIGHTFOG_ON NOISE_ON
+          passType: 0
+        - keywords: COOKIE_ON FULL_ON HEIGHTFOG_ON NOISE_ON
+          passType: 0
+        - keywords: SHADOWS_ON
+          passType: 0
+        - keywords: FULL_ON SHADOWS_ON
+          passType: 0
+        - keywords: COOKIE_ON SHADOWS_ON
+          passType: 0
+        - keywords: COOKIE_ON FULL_ON SHADOWS_ON
+          passType: 0
+        - keywords: HEIGHTFOG_ON SHADOWS_ON
+          passType: 0
+        - keywords: FULL_ON HEIGHTFOG_ON SHADOWS_ON
+          passType: 0
+        - keywords: COOKIE_ON HEIGHTFOG_ON SHADOWS_ON
+          passType: 0
+        - keywords: COOKIE_ON FULL_ON HEIGHTFOG_ON SHADOWS_ON
+          passType: 0
+        - keywords: NOISE_ON SHADOWS_ON
+          passType: 0
+        - keywords: FULL_ON NOISE_ON SHADOWS_ON
+          passType: 0
+        - keywords: COOKIE_ON NOISE_ON SHADOWS_ON
+          passType: 0
+        - keywords: COOKIE_ON FULL_ON NOISE_ON SHADOWS_ON
+          passType: 0
+        - keywords: HEIGHTFOG_ON NOISE_ON SHADOWS_ON
+          passType: 0
+        - keywords: FULL_ON HEIGHTFOG_ON NOISE_ON SHADOWS_ON
+          passType: 0
+        - keywords: COOKIE_ON HEIGHTFOG_ON NOISE_ON SHADOWS_ON
+          passType: 0
+        - keywords: COOKIE_ON FULL_ON HEIGHTFOG_ON NOISE_ON SHADOWS_ON
+          passType: 0
+        - keywords: VTRANSPARENCY_ON
+          passType: 0
+        - keywords: FULL_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON FULL_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: HEIGHTFOG_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: FULL_ON HEIGHTFOG_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON HEIGHTFOG_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON FULL_ON HEIGHTFOG_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: NOISE_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: FULL_ON NOISE_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON NOISE_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON FULL_ON NOISE_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: HEIGHTFOG_ON NOISE_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: FULL_ON HEIGHTFOG_ON NOISE_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON HEIGHTFOG_ON NOISE_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON FULL_ON HEIGHTFOG_ON NOISE_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: FULL_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON FULL_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: HEIGHTFOG_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: FULL_ON HEIGHTFOG_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON HEIGHTFOG_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON FULL_ON HEIGHTFOG_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: NOISE_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: FULL_ON NOISE_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON NOISE_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON FULL_ON NOISE_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: HEIGHTFOG_ON NOISE_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: FULL_ON HEIGHTFOG_ON NOISE_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON HEIGHTFOG_ON NOISE_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON FULL_ON HEIGHTFOG_ON NOISE_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON FULL_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON FULL_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON HEIGHTFOG_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON FULL_ON HEIGHTFOG_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON HEIGHTFOG_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON FULL_ON HEIGHTFOG_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON NOISE_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON FULL_ON NOISE_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON NOISE_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON FULL_ON NOISE_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON HEIGHTFOG_ON NOISE_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON FULL_ON HEIGHTFOG_ON NOISE_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON HEIGHTFOG_ON NOISE_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON FULL_ON HEIGHTFOG_ON NOISE_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON SHADOWS_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON FULL_ON SHADOWS_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON SHADOWS_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON FULL_ON SHADOWS_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON HEIGHTFOG_ON SHADOWS_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON FULL_ON HEIGHTFOG_ON SHADOWS_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON HEIGHTFOG_ON SHADOWS_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON FULL_ON HEIGHTFOG_ON SHADOWS_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON NOISE_ON SHADOWS_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON FULL_ON NOISE_ON SHADOWS_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON NOISE_ON SHADOWS_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON FULL_ON NOISE_ON SHADOWS_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON HEIGHTFOG_ON NOISE_ON SHADOWS_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON FULL_ON HEIGHTFOG_ON NOISE_ON SHADOWS_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON HEIGHTFOG_ON NOISE_ON SHADOWS_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON FULL_ON HEIGHTFOG_ON NOISE_ON SHADOWS_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON FULL_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON FULL_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON HEIGHTFOG_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON FULL_ON HEIGHTFOG_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON HEIGHTFOG_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON FULL_ON HEIGHTFOG_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON NOISE_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON FULL_ON NOISE_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON NOISE_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON FULL_ON NOISE_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON HEIGHTFOG_ON NOISE_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON FULL_ON HEIGHTFOG_ON NOISE_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON HEIGHTFOG_ON NOISE_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON FULL_ON HEIGHTFOG_ON NOISE_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON FULL_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON FULL_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON HEIGHTFOG_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON FULL_ON HEIGHTFOG_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON HEIGHTFOG_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON FULL_ON HEIGHTFOG_ON SHADOWS_ON
+            VTRANSPARENCY_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON NOISE_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON FULL_ON NOISE_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON NOISE_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON FULL_ON NOISE_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON HEIGHTFOG_ON NOISE_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: DENSITYPARTICLES_ON FULL_ON HEIGHTFOG_ON NOISE_ON SHADOWS_ON VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON HEIGHTFOG_ON NOISE_ON SHADOWS_ON
+            VTRANSPARENCY_ON
+          passType: 0
+        - keywords: COOKIE_ON DENSITYPARTICLES_ON FULL_ON HEIGHTFOG_ON NOISE_ON SHADOWS_ON
+            VTRANSPARENCY_ON
+          passType: 0
