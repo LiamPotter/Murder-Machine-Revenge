@@ -40,7 +40,7 @@ public class MoveToPoint : MonoBehaviour {
                 if (!rayInfo.collider.tag.Contains("Ground"))
                 {
                     if (gameObject.tag.Contains("Player"))
-                        if (!rayInfo.collider.tag.Contains("Player"))
+                        if (!rayInfo.collider.tag.Contains("Player")&& !rayInfo.collider.tag.Contains("Enemy"))
                             hasReachedPoint = true;
                     //if (gameObject.tag.Contains("Enemy"))
                     //if (!rayInfo.collider.tag.Contains("Enemy"))

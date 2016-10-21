@@ -30,4 +30,5 @@ public class PlayerMovement : MoveToPoint {
            pointToReach = hit.point;
         }
     }
+
 }
