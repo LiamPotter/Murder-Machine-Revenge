@@ -4,6 +4,8 @@ using System.Collections;
 
 public class GameManager : MonoBehaviour {
 
+    private PlayerMovement playerObject;
+
     public GameObject flowerPrefab;
 
     public GameObject enemyPrefab;
@@ -14,12 +16,14 @@ public class GameManager : MonoBehaviour {
 
     public Vector3 flowerSpawnPos, enemySpawnPos;
 
-    private Text scoreText;
+    public Text scoreText,healthText;
 
-    [Range(0,100)]
+    [Range(0,10)]
     public float spawnFrequency;
 
-    public float spawnWaitTime;
+    public float spawnDifficultyIncreaser;
+
+    public float waitTimeForDifficultyIncrease;
 
     private float sWTime;
 
@@ -35,11 +39,17 @@ public class GameManager : MonoBehaviour {
 
     void Start()
     {
-        scoreText = FindObjectOfType<Text>();
+        //scoreText = FindObjectOfType<Text>();
+
+        playerObject = FindObjectOfType<PlayerMovement>();
+        InvokeRepeating("TrySpawnEnemy", 0, spawnFrequency);
+        InvokeRepeating("TryToSpawnFlower", 0, spawnFrequency);
+        InvokeRepeating("IncreaseSpawnRate", waitTimeForDifficultyIncrease, waitTimeForDifficultyIncrease);
     }
 	void Update ()
     {
-
+      
+      
         if (flowerAmountToSpawn > 0)
         {
             shouldSpawnFlower = true;
@@ -66,7 +76,37 @@ public class GameManager : MonoBehaviour {
             GameObject inSceneEnemy = Instantiate(enemyPrefab, enemySpawnPos, Quaternion.identity) as GameObject;
             enemyAmountToSpawn--;
         }
-        scoreText.text = "Revenges: " + gameScore.ToString();
+        scoreText.text = "Pixies Murdered: " + gameScore.ToString();
+        healthText.text = "HP: " + playerObject.currentHealth;
 	}
-  
+    void TrySpawnEnemy()
+    {
+        if (spawnFrequency > 5.1)
+            enemyAmountToSpawn = 1;
+        if (spawnFrequency>=4&&spawnFrequency<=5)
+            enemyAmountToSpawn = 2;
+        if (spawnFrequency >= 3 && spawnFrequency <= 3.9)
+            enemyAmountToSpawn = 2;
+        if (spawnFrequency <= 2.9)
+            enemyAmountToSpawn = 2;
+    }
+    void TryToSpawnFlower()
+    {
+        if (spawnFrequency > 5.1)
+            flowerAmountToSpawn = 2;
+        if (spawnFrequency >= 4 && spawnFrequency <= 5)
+            flowerAmountToSpawn = 2;
+        if (spawnFrequency >= 3 && spawnFrequency <= 3.9)
+            flowerAmountToSpawn = 3;
+        if (spawnFrequency <= 2.9)
+            flowerAmountToSpawn = 3;
+    }
+    void IncreaseSpawnRate()
+    {
+        spawnFrequency -= spawnDifficultyIncreaser;
+        CancelInvoke("TrySpawnEnemy");
+        InvokeRepeating("TrySpawnEnemy", 0, spawnFrequency);
+        CancelInvoke("TryToSpawnFlower");
+        InvokeRepeating("TryToSpawnFlower", 0, spawnFrequency);
+    } 
 }

@@ -6,6 +6,8 @@ public class MoveToPoint : MonoBehaviour {
 
     public Vector3 pointToReach;
 
+    public LayerMask dontColliderMask;
+
     private Vector3 pointMinusY;
 
     public float speed;
@@ -34,20 +36,23 @@ public class MoveToPoint : MonoBehaviour {
                 hasReachedPoint = true;
             }
             //else hasReachedPoint = false;
-            RaycastHit rayInfo;
-            if (Physics.SphereCast(transform.position, 5, pointMinusY, out rayInfo, fowardRayLength))
-            {
-                if (!rayInfo.collider.tag.Contains("Ground"))
-                {
-                    if (gameObject.tag.Contains("Player"))
-                        if (!rayInfo.collider.tag.Contains("Player")&& !rayInfo.collider.tag.Contains("Enemy"))
-                            hasReachedPoint = true;
-                    //if (gameObject.tag.Contains("Enemy"))
-                    //if (!rayInfo.collider.tag.Contains("Enemy"))
-                    hasReachedPoint = true;
-                }
-            }
-            else hasReachedPoint = false;
+            //RaycastHit rayInfo;
+            //if (Physics.SphereCast(transform.position, 5, transform.forward, out rayInfo, fowardRayLength, dontColliderMask.value))
+            //{
+            //    if (!rayInfo.collider.tag.Contains("Ground"))
+            //    {
+            //        if (gameObject.tag.Contains("Player"))
+            //            if (!rayInfo.collider.tag.Contains("Player"))
+            //            {
+            //                hasReachedPoint = true;
+            //            }
+            //        //if (gameObject.tag.Contains("Enemy"))
+            //        //if (!rayInfo.collider.tag.Contains("Enemy"))
+            //        hasReachedPoint = true;
+            //    }
+            //    Debug.Log(rayInfo.collider.name);
+            //}
+            //else hasReachedPoint = false;
         }
     }
  

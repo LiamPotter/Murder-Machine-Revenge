@@ -13,6 +13,11 @@ public class PlayerTriggerCollision : MonoBehaviour {
                     coll.transform.parent.SendMessage("Die");
             }
         }
-        Debug.Log(coll.name);
+        if(coll.tag.Contains("Flower"))
+        {
+            SendMessageUpwards("HealOneHealth");
+            Destroy(coll.gameObject);
+        }
+        //Debug.Log(coll.name);
     }
 }

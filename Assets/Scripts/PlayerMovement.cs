@@ -4,6 +4,7 @@ using Rewired;
 
 public class PlayerMovement : MoveToPoint {
 
+    public int currentHealth;
     public LayerMask groundMask;
    
 	void Start ()
@@ -22,7 +23,7 @@ public class PlayerMovement : MoveToPoint {
     public void ClickToPoint()
     {
         hasReachedPoint = false;
-        Debug.Log("Clickd");
+        //Debug.Log("Clickd");
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
         if(Physics.Raycast(ray,out hit,500, groundMask.value))
@@ -30,5 +31,13 @@ public class PlayerMovement : MoveToPoint {
            pointToReach = hit.point;
         }
     }
-
+    public void TakeOneDamage()
+    {
+        currentHealth--;
+    }
+    public void HealOneHealth()
+    {
+        if (currentHealth <= 4)
+            currentHealth++;
+    }
 }
