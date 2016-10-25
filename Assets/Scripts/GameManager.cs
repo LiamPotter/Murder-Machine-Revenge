@@ -6,6 +6,16 @@ public class GameManager : MonoBehaviour {
 
     private PlayerMovement playerObject;
 
+    public bool startedGame;
+
+    public bool spawnedPreliminary;
+
+    public Image startMenuPanel;
+
+    public Image deathMenuPanel;
+
+    public Transform playerBeginPos;
+
     public GameObject flowerPrefab;
 
     public GameObject enemyPrefab;
@@ -40,16 +50,26 @@ public class GameManager : MonoBehaviour {
     void Start()
     {
         //scoreText = FindObjectOfType<Text>();
-
+        startedGame = false;
+        spawnedPreliminary = true;
         playerObject = FindObjectOfType<PlayerMovement>();
-        InvokeRepeating("TrySpawnEnemy", 0, spawnFrequency);
-        InvokeRepeating("TryToSpawnFlower", 0, spawnFrequency);
-        InvokeRepeating("IncreaseSpawnRate", waitTimeForDifficultyIncrease, waitTimeForDifficultyIncrease);
+        playerObject.transform.position = playerBeginPos.position;
     }
-	void Update ()
+
+    void Update()
     {
-      
-      
+        if (startedGame)
+        {
+            startMenuPanel.gameObject.SetActive(false);
+            if(!spawnedPreliminary)
+            {
+                InvokeRepeating("TrySpawnEnemy", 0, spawnFrequency);
+                InvokeRepeating("TryToSpawnFlower", 0, spawnFrequency);
+                InvokeRepeating("IncreaseSpawnRate", waitTimeForDifficultyIncrease, waitTimeForDifficultyIncrease);
+                playerObject.canMove = true;
+                spawnedPreliminary = true;
+            }
+        }
         if (flowerAmountToSpawn > 0)
         {
             shouldSpawnFlower = true;
@@ -78,7 +98,30 @@ public class GameManager : MonoBehaviour {
         }
         scoreText.text = "Pixies Murdered: " + gameScore.ToString();
         healthText.text = "HP: " + playerObject.currentHealth;
+        if(playerObject.currentHealth<=0)
+        {
+            ShowDeathScreen();
+        }
 	}
+
+    public void StartGame()
+    {
+        startedGame = true;
+        spawnedPreliminary = false;
+        enemyAmountToSpawn = 2;
+    }
+    
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
+    public void ShowDeathScreen()
+    {
+        deathMenuPanel.gameObject.SetActive(true);
+        Time.timeScale = 0;
+    }
+
     void TrySpawnEnemy()
     {
         if (spawnFrequency > 5.1)

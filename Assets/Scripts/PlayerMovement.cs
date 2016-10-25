@@ -6,7 +6,9 @@ public class PlayerMovement : MoveToPoint {
 
     public int currentHealth;
     public LayerMask groundMask;
-   
+
+    public bool canMove;
+
 	void Start ()
     {
         shouldMoveToPoint = true;
@@ -16,6 +18,8 @@ public class PlayerMovement : MoveToPoint {
 
 	void Update ()
     {
+        if (!canMove)
+            return;
         MoveToMethod();
         if(Input.GetMouseButtonDown(0))
         { ClickToPoint();}

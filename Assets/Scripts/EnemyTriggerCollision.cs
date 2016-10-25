@@ -5,8 +5,11 @@ public class EnemyTriggerCollision : MonoBehaviour {
 
     EnemyMovement eMovement;
 
+    bool doneDamage;
+
     void Start()
     {
+        doneDamage = false;
         eMovement = GetComponentInParent<EnemyMovement>();
     }
     void OnTriggerEnter(Collider coll)
@@ -21,7 +24,11 @@ public class EnemyTriggerCollision : MonoBehaviour {
         {
             if(coll.tag.Contains("Player"))
             {
-                coll.transform.parent.SendMessage("TakeOneDamage");
+                if (!doneDamage)
+                {
+                    coll.transform.parent.SendMessage("TakeOneDamage");
+                    doneDamage = true;
+                }
                 Destroy(transform.parent.gameObject);
             }
         }
